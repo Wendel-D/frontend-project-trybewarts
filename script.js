@@ -25,13 +25,14 @@ function enableBtn() {
 }
 enableBtn();
 
-function contador(){
-  let texto = document.getElementById("textarea");
-  let carac = document.getElementById("counter");
+function contador() {
+  const texto = document.getElementById('textarea');
+  const carac = document.getElementById('counter');
   let decrescente = 500;
-  texto.addEventListener("keyup", function(){
-    let textV = texto.value;
+  texto.addEventListener('keyup', subCont)
+  function subCont(){
+    const textV = texto.value;
     carac.innerText = decrescente - textV.length;
-  })
+  }
 }
 contador();
