@@ -23,6 +23,15 @@
   height: 500px;
 }
 
-.input{
+.container {
   display: flex;
+}
+
+.container label{
+  margin: 10px;
+}
+
+.container-inputs {
+  display: flex;
+  flex-direction: column;
 }
