@@ -1,6 +1,8 @@
 const getBtn = document.getElementById('bt-enviar');
 const getInputEmail = document.getElementById('email');
 const getInputSenha = document.getElementById('senha');
+const getInputAgreement = document.getElementById('agreement');
+const getBtnSubmit = document.getElementById('submit-btn');
 
 function clickbtn() {
   getBtn.addEventListener('click', (e) => {
@@ -11,3 +13,14 @@ function clickbtn() {
   });
 }
 clickbtn();
+
+function enableBtn() {
+  getInputAgreement.addEventListener('click', () => {
+    if (getBtnSubmit.disabled) {
+      getBtnSubmit.disabled = false;
+    } else {
+      getBtnSubmit.disabled = true;
+    }
+  });
+}
+enableBtn();
