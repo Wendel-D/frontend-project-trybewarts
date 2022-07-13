@@ -29,10 +29,10 @@ function contador() {
   const texto = document.getElementById('textarea');
   const carac = document.getElementById('counter');
   const decrescente = 500;
-  texto.addEventListener('keyup', subCont);
   function subCont() {
     const textV = texto.value;
     carac.innerText = decrescente - textV.length;
   }
+  texto.addEventListener('keyup', subCont);
 }
 contador();
