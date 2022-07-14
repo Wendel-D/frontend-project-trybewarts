@@ -33,6 +33,6 @@ function contador() {
     const textV = texto.value;
     carac.innerText = decrescente - textV.length;
   }
-  texto.addEventListener('keyup', subCont);
+  texto.addEventListener('keydown', subCont);
 }
 contador();
